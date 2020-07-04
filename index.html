@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Shubham Mittal</title>
@@ -14,6 +14,27 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+            .skill-container {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .skill-container-mobile {
+                display: none;
+            }
+            @media (max-width: 576px) {
+                .skill-container {
+                    display: none;
+                }
+
+                .skill-container-mobile {
+                    display: block;
+                }
+            }
+            
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -36,6 +57,7 @@
                 </ul>
             </div>
         </nav>
+
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
@@ -43,19 +65,34 @@
                 <div class="resume-section-content">
                     <h3 class="mb-0">
                         Shubham
-                        <span class="text-primary">Mittal</span>
+                        <span class="text-primary">MITTAL</span>
                     </h3>
                     <div class="subheading mb-5">
-                        <i class="fas fa-globe-americas"></i>  1009 E University Dr · Tempe, AZ 85281 <br><i class="fas fa-mobile-alt"></i>  (480) 570-5052 <br> 
-                        <i class="far fa-envelope"></i>  
-                              <a href="mailto:smitta21@asu.edu">smitta21@asu.edu</a> <i class="far fa-envelope"></i>  
-                        <a href="mailto:smittal.1994@gmail.com">smittal.1994@gmail.com</a>
+                        <i class="fas fa-globe-americas"></i>  1009 E University Dr · Tempe, AZ 85281 <br>
+                        <i class="fas fa-mobile-alt"></i>  (480) 570-5052 
+                        <br> 
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <i class="far fa-envelope"></i>  
+                              <a href="mailto:smitta21@asu.edu"> smitta21@asu.edu</a>
+                            </div>
+
+                            <div class="col-sm-4">
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:smittal.1994@gmail.com"> smittal.1994@gmail.com</a>
+                            </div>
+                        
+                        </div>
+                        <!-- <i class="far fa-envelope"></i>  
+                              <a href="mailto:smitta21@asu.edu"> smitta21@asu.edu</a> 
+                              <i class="far fa-envelope"></i><a href="mailto:smittal.1994@gmail.com"> smittal.1994@gmail.com</a>
+                         -->
                     </div>
-                    <p class="lead mb-5">I am a Software Engineer (and an aspiring Data Scientist!) with more than 2.5 years of experience and a Master's degree in the Computer Science program from Arizona State University, graduated in May 2020. After completing my Bachelor's back in 2016, I joined Maruti Suzuki India Ltd. as an Intern that led me to the position of Software Engineer. I was part of the company from January 2016 till July 2018.
+                    <p class="lead mb-5 text-justify" >I am a Software Engineer (and an aspiring Data Scientist!) with more than 2.5 years of experience and a Master's degree in the Computer Science program from Arizona State University, graduated in May 2020. After completing my Bachelor's back in 2016, I joined Maruti Suzuki India Ltd. as an Intern that led me to the position of Software Engineer. I was part of the company from January 2016 till July 2018.
                     To pursue my interests in Software Engineering and Data Science, I joined Arizona State University in August 2018. During this period, I was also a part of Ticketmaster where I performed my duties as a Data Science Intern. 
                     I am currently graduated and actively searching for a job opportunity in similar fields. I am available on the below-mentioned social-media channels, and I promise to respond quickly! I am looking forward to hearing from you.    
                     </p>
-                    <div class="social-icons">
+                    <div class="social-icons text-justify">
                         <a class="social-icon" href="https://linkedin.com/in/smittal2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://twitter.com/smittal1994" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a class="social-icon" href="https://github.com/SHM02" target="_blank"><i class="fab fa-github"></i></a>
@@ -66,13 +103,22 @@
             </section>
             <hr class="m-0" />
             <!-- Experience-->
-            <section class="resume-section" id="experience">
+            <section class="resume-section text-justify" id="experience">
                 <div class="resume-section-content">
                     <h3 class="mb-5">Experience</h3>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h4 class="mb-0">Data Science Intern</h4>
-                            <div class="subheading mb-3"><i class="far fa-building"></i> Ticketmaster <i class="fa fa-map-pin" aria-hidden="true"></i> Hollywood, Los Angeles, United States</div>
+                            <div class="subheading mb-3 row">
+                                <div class="col-sm-3">
+                                <i class="far fa-building"></i> 
+                                Ticketmaster 
+                                </div>
+                                <div class="col-sm-7">
+                                <i class="fa fa-map-pin" aria-hidden="true"></i> 
+                                Hollywood, Los Angeles, United States
+                                </div>
+                            </div>
                             <p><u>Mobile App Onboarding</u>: Designed and developed Regression model to identify the correlation of fan behavior with their monthly and daily Mobile App Retention.
                                 Transformed raw data using Pandas to scrape, clean, prepare, model and analyze large datasets from BigQuery.
                                 Identified fan behavior responsible for a 40% increase in Monthly Active Users on the Mobile App.<p>
@@ -83,7 +129,16 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h4 class="mb-0">Software Engineer</h4>
-                            <div class="subheading mb-3"><i class="far fa-building"></i> Maruti Suzuki India Ltd. <i class="fa fa-map-pin" aria-hidden="true"></i> Gurugram, India</div>
+                            <div class="subheading mb-3 row">
+                                <div class="col-sm-5">
+                                <i class="far fa-building"></i> 
+                                    Maruti Suzuki India Ltd.
+                                </div>
+                                <div class="col-sm-4">
+                                <i class="fa fa-map-pin" aria-hidden="true"></i> Gurugram, India
+                                </div>
+                            </div>
+
                             <p><u>Dealer Management System for Suzuki Philippines</u>: Collaborated in design, development, integration testing of a new feature rich web application for Suzuki Philippines used by over 2500 dealers. Fixed bugs in existing web application to build a cloud-based Microservice using Spring Boot and laid the basis for traffic scaling. Overhauled centralized database (Oracle) ensuring application performs for load and volume of users; increased overall transactional speed by 65%.<p> Designed and implemented a REST API for dealers to request and respond messages to their respective business head. Created and converted PL/SQL Procedures to Informatica mappings for optimum performance of the mappings. Built a CI/CD pipeline for continuous monitoring and integration of test cases using Jenkins. Mitigated customer issues(70% reduction), ad-hoc requests from the user.</p>
                         </p>
                         </div>
@@ -92,7 +147,16 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h4 class="mb-0">Software Engineer Intern</h4>
-                            <div class="subheading mb-3"><i class="far fa-building"></i> Maruti Suzuki India Ltd. <i class="fa fa-map-pin" aria-hidden="true"></i> Gurugram, India</div>
+                            <div class="subheading mb-3 row">
+                                <div class="col-sm-5">
+                                <i class="far fa-building"></i> 
+                                    Maruti Suzuki India Ltd. 
+                                </div>
+                                <div class="col-sm-4">
+                                <i class="fa fa-map-pin" aria-hidden="true"></i> 
+                                Gurugram, India
+                                </div>
+                            </div>
                             <p>Coordinated with various technical teams for building a data pipeline to build dashboards and reports for the client using QlikView.<p>Tuned Informatica mappings and sessions for optimum performance and assisted other ETL developers. Automated deployments to generate daily reports for new policies, revenue claims, and performance using Cron jobs. Built a data pipeline for continuous monitoring and integration of test cases using Jenkins.</p></p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">January 2016 - June 2016</span></div>
@@ -101,7 +165,7 @@
             </section>
             <hr class="m-0" />
             <!-- Education-->
-            <section class="resume-section" id="education">
+            <section class="resume-section text-justify" id="education">
                 <div class="resume-section-content">
                     <h3 class="mb-5">Education</h3>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -125,7 +189,7 @@
             </section>
             <hr class="m-0" />
             <!-- Skills-->
-            <section class="resume-section" id="skills">
+            <section class="resume-section text-justify" id="skills">
                 <div class="resume-section-content">
                     <h3 class="mb-5">Skills</h3>
                    <!--  <ul class="list-inline dev-icons">
@@ -140,35 +204,35 @@
                     </ul> -->
 
                      <!-- <div class="subheading mb-3">Programming Languages & Tools</div> -->
-                     <div style="display: flex;justify-content: space-between;">
-                     <div>
-                     <h5>Language</h5>
-                     <ul class="list-inline">
-                        <li class="list-item">Java</li>
-                        <li class="list-item">Python</li>
-                        <li class="list-item">C</li>
-                        <li class="list-item">C++</li>
-                        <li class="list-item">PL/SQL</li>
-                        <li class="list-item">Scala</li>                      
-                    </ul>
-                    </div>
-
-                    <div>
-                     <h5>Tools</h5>
-                     <ul class="list-inline">
-                        <li class="list-item">AWS</li>
-                        <li class="list-item">Kubernetes</li>
-                        <li class="list-item">Docker</li>
-                        <li class="list-item">BigQuery</li>
-                        <li class="list-item">GIT</li>
-                        <li class="list-item">Google Analytics</li>
-                        <li class="list-item">Tableau</li>
-                        <li class="list-item">Informatica</li>
-                        <li class="list-item">Qlikview</li>
-                        <li class="list-item">Jenkins</li>
-                                              
-                    </ul>
-                    </div>
+                     <div class="skill-container" >
+                        <div>
+                             <h5>Language</h5>
+                             <ul class="list-inline">
+                                <li class="list-item">Java</li>
+                                <li class="list-item">Python</li>
+                                <li class="list-item">C</li>
+                                <li class="list-item">C++</li>
+                                <li class="list-item">PL/SQL</li>
+                                <li class="list-item">Scala</li>                      
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h5>Tools</h5>
+                            <ul class="list-inline">
+                                <li class="list-item">AWS</li>
+                                <li class="list-item">Kubernetes</li>
+                                <li class="list-item">Docker</li>
+                                <li class="list-item">BigQuery</li>
+                                <li class="list-item">GIT</li>
+                                <li class="list-item">Google Analytics</li>
+                                <li class="list-item">Tableau</li>
+                                <li class="list-item">Informatica</li>
+                                <li class="list-item">Qlikview</li>
+                                <li class="list-item">Jenkins</li>
+                                                  
+                            </ul>
+                        </div>
 
                     <div>
                      <h5>Frameworks</h5>
@@ -211,6 +275,83 @@
                     </div>
                     </div>
 
+                    <div class="skill-container-mobile" >
+                        <div>
+                             <h5>Language</h5>
+                             
+                                <span>
+                                    
+                                Java,
+                                Python,
+                                C,
+                                C++,
+                                PL/SQL,
+                                Scala
+                                </span>
+                            
+                        </div>
+                        <br />
+                        <div>
+                            <h5>Tools</h5>
+                            <span>
+                                AWS,
+                                Kubernetes,
+                                Docker,
+                                BigQuery,
+                                GIT,
+                                Google Analytics,
+                                Tableau,
+                                Informatica,
+                                Qlikview,
+                                Jenkins
+                                                  
+                            </span>
+                        </div>
+                        <br />
+
+                    <div>
+                     <h5>Frameworks</h5>
+                     <span>
+                        Spark,
+                        Spring,
+                        Spring Boot,
+                        Scikit-Learn,
+                        Statsmodels,
+                        SciPy,
+                        Patsy
+        
+                    </span>
+                    </div>
+                    <br />
+
+                    <div>
+                     <h5>Databases</h5>
+                     <span>
+                        Oracle,
+                        MySQL,
+                        PostgreSQL,
+                        MongoDB,
+                        Teradata,
+                        RDS
+                    </span>
+                    </div>
+                    <br />
+
+
+                    <div>
+                     <h5>Web Technologies</h5>
+                     <span>
+                        JavaScript,
+                        React,
+                        Node.js,
+                        D3,
+                        HTML5,
+                        CSS3,
+                        Bootstrap
+                    </span>
+                    </div>
+                    </div>
+
                     <!-- <div class="subheading mb-3">Workflow</div>
                     <ul class="fa-ul mb-0">
                         <li>
@@ -235,7 +376,7 @@
             <hr class="m-0" />
 
             <!-- <projects> -->
-            <section class="resume-section" id="projects">
+            <section class="resume-section text-justify" id="projects">
                 <div class="resume-section-content">
                     <h3 class="mb-5">Academic Projects</h3>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -277,7 +418,7 @@
             <hr class="m-0" />
 
             <!-- Awards-->
-            <section class="resume-section" id="awards">
+            <section class="resume-section text-justify" id="awards">
                 <div class="resume-section-content">
                     <h3 class="mb-5">Awards</h3>
                     <ul class="fa-ul mb-0">
@@ -296,14 +437,14 @@
          <hr class="m-0" />
 
             <!-- Interests-->
-            <section class="resume-section" id="interests">
+            <section class="resume-section text-justify" id="interests">
                 <div class="resume-section-content">
                     <h3 class="mb-5">Interests</h3>
-                    <p>I enjoy most of my time being outdoors. I am a huge fan of <i class="fas fa-futbol"></i> Real Madrid Football Club and wish to watch them play live. I enjoy playing cricket, <i class="far fa-futbol"></i> football, tennis, <i class="fas fa-table-tennis"></i> table-tennis, <i class="fas fa-swimmer"></i> swimming, hiking, kayaking. I recently developed my interests towards skiing <i class="fas fa-skiing"></i> and after falling more than 100 times, it was pure bliss to learn it.
-                    Staying away from home has also made me a better chef <i class="fas fa-utensils"></i> and now I enjoy cooking food at home <i class="fas fa-glass-cheers"></i> .<br>
-                    I am an avid traveller <i class="fas fa-mountain"></i> and have already visited more than 10 countries <i class="fas fa-plane-departure"></i> and wish to visit more and more after this COVID situation improves.
+                    <p>I enjoy most of my time being outdoors. I am a huge fan of the Real Madrid Football Club <i class="fas fa-futbol"></i> and wish to watch them play live. I enjoy playing cricket, football <i class="far fa-futbol"></i>, tennis, table-tennis <i class="fas fa-table-tennis"></i>, swimming <i class="fas fa-swimmer"></i>, hiking, kayaking. I recently developed my interests in snowboarding <i class="fas fa-snowboarding"></i> and after falling more than 100 times, it was pure bliss to learn it.
+                    Staying away from home has also made me a better chef <i class="fas fa-utensils"></i> and now I enjoy cooking food at home <i class="fas fa-glass-cheers"></i>.<br>
+                    I am an avid traveler <i class="fas fa-mountain"></i> and have already visited more than 10 countries <i class="fas fa-plane-departure"></i> and wish to visit more and more after this COVID situation improves.
                     </p>
-                    <p class="mb-0">When forced indoors, I follow a number of sports games as mentioned-above and enjoy playing <i class="fas fa-gamepad"></i> FIFA and Call of Duty. I also spend a large amount of my free time exploring the latest technology advancements in the world.</p>
+                    <p class="mb-0">When forced indoors, I follow a number of sports games as mentioned-above and enjoy playing FIFA <i class="fas fa-gamepad"></i> and Call of Duty. I also spend a large amount of my free time exploring the latest technological advancements in the world.</p>
                 </div>
             </section>
             <hr class="m-0" />
